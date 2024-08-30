@@ -1,0 +1,7 @@
+".\Objects\main.obj",
+".\Objects\delay.obj",
+".\Objects\run_lcd.obj",
+".\Objects\pass_wd.obj",
+".\Objects\keyboard.obj" 
+TO ".\Objects\5" 
+PRINT(".\Listings\5.m51") RAMSIZE(256) 

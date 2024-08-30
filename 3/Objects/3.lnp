@@ -1,0 +1,7 @@
+".\Objects\main.obj",
+".\Objects\useful.obj",
+".\Objects\clock_show.obj",
+".\Objects\button.obj",
+".\Objects\delay.obj" 
+TO ".\Objects\3" 
+PRINT(".\Listings\3.m51") RAMSIZE(256) 

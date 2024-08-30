@@ -1,0 +1,47 @@
+C51 COMPILER V9.60.7.0   USEFUL                                                            07/15/2024 11:26:40 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE USEFUL
+OBJECT MODULE PLACED IN .\Objects\useful.obj
+COMPILER INVOKED BY: C:\Keil5\Core\C51\BIN\C51.EXE useful.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
+                    -\useful.lst) TABS(2) OBJECT(.\Objects\useful.obj)
+
+line level    source
+
+   1          #include "useful.h"
+   2          
+   3          void num_to_str (long int to_str, unsigned char * str)
+   4          {
+   5   1        unsigned char pt = 0, * put_in = str, buffer[17], end = 0;
+   6   1        
+   7   1        (to_str < 0) ? (*put_in = '-', end = 1, to_str = - to_str) : (1);
+   8   1        
+   9   1        for (; pt < (16 - end) && to_str > 0; pt ++)
+  10   1        {
+  11   2          buffer[pt] = to_str % 10 + 48;
+  12   2          to_str /= 10;
+  13   2        }
+  14   1        
+  15   1        (end == 1) ? (buffer[pt] = '-', pt ++) : (1);
+  16   1        
+  17   1        for (end = 0; end < pt; end ++)
+  18   1        {
+  19   2          str[end] = buffer[pt - 1 - end];
+  20   2        }
+  21   1        
+  22   1        //str[end] = '\0';
+  23   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    192    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      26
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

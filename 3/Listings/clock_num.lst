@@ -1,0 +1,24 @@
+C51 COMPILER V9.60.7.0   CLOCK_NUM                                                         07/05/2024 22:34:05 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE CLOCK_NUM
+OBJECT MODULE PLACED IN .\Objects\clock_num.obj
+COMPILER INVOKED BY: C:\Keil5\Core\C51\BIN\C51.EXE clock_num.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listi
+                    -ngs\clock_num.lst) TABS(2) OBJECT(.\Objects\clock_num.obj)
+
+line level    source
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   ----    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

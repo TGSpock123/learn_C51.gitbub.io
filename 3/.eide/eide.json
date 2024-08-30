@@ -1,0 +1,76 @@
+{
+  "name": "3",
+  "type": "C51",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "Source Group 1",
+        "files": [
+          {
+            "path": "main.c"
+          },
+          {
+            "path": "delay.c"
+          },
+          {
+            "path": "delay.h"
+          },
+          {
+            "path": "useful.h"
+          },
+          {
+            "path": "useful.c"
+          },
+          {
+            "path": "clock_show.h"
+          },
+          {
+            "path": "clock_show.c"
+          },
+          {
+            "path": "button.c"
+          },
+          {
+            "path": "button.h"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "856b0dd4b06be2b1947702f1df57f853"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [],
+      "toolchain": "Keil_C51",
+      "compileConfig": {
+        "options": "null"
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "",
+        "commandLine": "",
+        "eraseChipCommand": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../../../../Keil5/Core/C51/INC/Atmel"
+        ],
+        "libList": [],
+        "defineList": []
+      }
+    }
+  },
+  "version": "3.4"
+}

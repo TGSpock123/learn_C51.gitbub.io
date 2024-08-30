@@ -1,0 +1,44 @@
+C51 COMPILER V9.60.7.0   CLOCK_SHOW                                                        07/10/2024 18:48:44 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE CLOCK_SHOW
+OBJECT MODULE PLACED IN .\Objects\clock_show.obj
+COMPILER INVOKED BY: C:\Keil5\Core\C51\BIN\C51.EXE clock_show.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\List
+                    -ings\clock_show.lst) TABS(2) OBJECT(.\Objects\clock_show.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include "delay.h"
+   3          #include "clock_show.h"
+   4          
+   5          int clock_num[] = {
+   6            ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, DOT
+   7          };
+   8          
+   9          int clock_letter[] = {
+  10            LETT_A, LETT_B, LETT_C, LETT_D, LETT_E, LETT_F
+  11          };
+  12          
+  13          //waring: loc >= 0 && loc <= 7, num >= 0 && num <= 10;
+  14          void clock_show_num (unsigned char loc, unsigned char num)
+  15          {
+  16   1        P2 = (7 - loc) << 2;
+  17   1        P0 = clock_num[num];
+  18   1        delay_ms ();
+  19   1        P0 = 0;
+  20   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     28    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     34    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
